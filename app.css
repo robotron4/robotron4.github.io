@@ -1,7 +1,35 @@
 body {
-    background-color: rgb(215, 184, 138);
+    background-color: rgb(53, 64, 74);
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 255, 255);
+    margin: 0;
 }
 
 #cat {
     width: 18%;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(42, 42, 43);
+
+}
+
+.head {
+    padding: 1em 3em;
+    border: rgb(42, 42, 43) solid 3px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 0 1em;
+}
+
+.head:hover {
+    border: rgb(255, 255, 255) solid 3px;
+    border-radius: 0.5em;
+}
+
+main {
+    margin-left: 2em;
+
 }
