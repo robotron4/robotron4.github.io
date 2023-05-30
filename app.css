@@ -16,7 +16,11 @@ body {
 }
 
 #cat {
-    width: 18%;
+    width: 10%;
+    position: absolute;
+    bottom: 2em;
+    left: 0;
+
 }
 
 header {
