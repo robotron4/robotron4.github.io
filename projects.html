@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css" />
+    <title>Leon | Webdev Portfolio - Projects</title>
+  </head>
+  <body>
+    <nav>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">home</a>
+        <a href="projects.html">projects</a>
+      </div>
+    </nav>
+    <main>
+      <h1>projects</h1>
+
+      <section id="projects">
+        <div class="projects-grid">
+          <div class="project">
+            <h3>Vue.js To-Do App</h3>
+            <p>
+              A minimalist task manager built with Vue.js and local storage.an
+              application to automatically check your submissions and give an
+              immediate result.an application to automatically check your
+              submissions and give an immediate result.an application to
+              automatically check your submissions and give an immediate
+              result.an application to automatically check your submissions and
+              give an immediate result.an application to automatically check
+              your submissions and give an immediate result.
+            </p>
+            <a href="https://github.com/roboron4/todo-app" target="_blank"
+              >GitHub Repo</a
+            >
+          </div>
+
+          <div class="project">
+            <h3>Portfolio Website</h3>
+            <p>
+              The site you're browsing right now! Built using vanilla HTML, CSS,
+              and JavaScript.
+            </p>
+            <a href="https://github.com/roboron4/portfolio" target="_blank"
+              >GitHub Repo</a
+            >
+          </div>
+
+          <div class="project">
+            <h3>Vue Quiz App</h3>
+            <p>
+              A dynamic quiz application powered by Vue.js, featuring a custom
+              API for questions.
+            </p>
+            <a href="https://github.com/roboron4/vue-quiz" target="_blank"
+              >GitHub Repo</a
+            >
+          </div>
+          <div class="project">
+            <h3>Vue Quiz App</h3>
+            <p>
+              A dynamic quiz application powered by Vue.js, featuring a custom
+              API for questions.
+            </p>
+            <a href="https://github.com/roboron4/vue-quiz" target="_blank"
+              >GitHub Repo</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Leon Vornholt</p>
+    </footer>
+
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

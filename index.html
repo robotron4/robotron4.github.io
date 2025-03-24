@@ -1,38 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css" />
+    <title>Leon | Webdev Portfolio</title>
+  </head>
+  <body>
+    <nav>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">home</a>
+        <a href="projects.html">projects</a>
+      </div>
+    </nav>
+    <main>
+      <h1>welcome</h1>
+      <section id="about">
+        <div>
+          <h3>About Me</h3>
+          <p>
+            I'm Leon, a 6th-semester Media Computer Science student passionate
+            about web development, especially working with
+            <span class="vue">Vue.js</span>. I enjoy building intuitive and
+            efficient applications. <br />
+            Besides programming, I have a passion for cryptocurrencies and
+            making music. Feel free to reach out to me: <br />
+            <span class="vue">vornholt.leon@gmail.com</span>
+          </p>
+        </div>
+        <img src="img/1732772919759.jpg" alt="me in the snow" />
+      </section>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="app.css">
-    <title>leon's github</title>
-</head>
+      <section id="projects">
+        <h2>Projects</h2>
+        <p>Check out some of my latest work.</p>
+        <div class="projects-grid">
+          <article class="project">
+            <h3>feedbacksystem</h3>
+            <p>
+              As part of my student work at the Technical University of
+              Mittelhessen, I am responsible for the frontend development of a
+              new feature of the feedback system; an application to
+              automatically check your submissions and give an immediate result.
+            </p>
+            <a href="https://github.com/thm-mni-ii/feedbacksystem"
+              >Link zum Projekt</a
+            >
+          </article>
+          <article class="project">
+            <h3>Project 2</h3>
+            <p>Kurze Beschreibung des Projektes.</p>
+            <a href="#">Link zum Projekt</a>
+          </article>
+        </div>
+        <a href="projects.html" class="button">View All Projects</a>
+      </section>
+    </main>
 
-<body>
-    <div id="page-container">
-        <header>
-            <a href="" class="head">home</a>
-            <a href="./stuff/index.html" class="head">stuff</a>
-            <a href="" class="head">projects</a>
-        </header>
-        <main>
-            <h1>heyo</h1>
+    <footer>
+      <p>&copy; 2025 Leon Vornholt</p>
+    </footer>
 
-            <p>going to upload small but noteworthy projects, thoughts and other things here on this side to get more
-                familiar
-                with using git and github.</p>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
 
-
-        </main>
-        <img src="img/cat.png" alt="" id="cat">
-
-        <footer>
-            <p>&copy; 2023 Leon Vornholt</p>
-        </footer>
-    </div>
-
-    <script src="./app.js"></script>
-</body>
-
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+  </body>
 </html>
