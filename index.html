@@ -1,70 +1,214 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Leon Vornholt - Media Computer Science Student & Web Developer. Spezialisiert auf Vue.js, Frontend-Entwicklung und moderne Webtechnologien." />
+    <meta
+      name="keywords"
+      content="Web Developer, Vue.js, Frontend, Media Computer Science, Portfolio, Leon Vornholt" />
     <link rel="stylesheet" href="app.css" />
-    <title>Leon | Webdev Portfolio</title>
+    <title>Leon Vornholt | Web Developer Portfolio</title>
   </head>
   <body>
     <nav>
-      <div class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
       <div class="nav-links">
-        <a href="index.html">home</a>
-        <a href="projects.html">projects</a>
+        <a href="#home">Home</a>
+        <a href="#projects">Projekte</a>
+        <a href="#contact">Kontakt</a>
       </div>
     </nav>
-    <main>
-      <h1>welcome</h1>
+
+    <main id="home">
+      <h1>Willkommen</h1>
+
       <section id="about">
         <div>
-          <h3>About Me</h3>
+          <h3>Über mich</h3>
           <p>
-            I'm Leon, a 6th-semester Media Computer Science student passionate
-            about web development, especially working with
-            <span class="vue">Vue.js</span>. I enjoy building intuitive and
-            efficient applications. <br />
-            Besides programming, I have a passion for cryptocurrencies and
-            making music. Feel free to reach out to me: <br />
-            <span class="vue">vornholt.leon@gmail.com</span>
+            Ich bin Leon, Medieninformatik Student im 6. Semester an der
+            Technischen Hochschule Mittelhessen mit einer Leidenschaft für
+            Webentwicklung, insbesondere für die Arbeit mit Vue.js. Ich
+            entwickle gerne intuitive und effiziente Anwendungen, die echten
+            Mehrwert schaffen.
           </p>
+          <p>
+            Neben dem Programmieren begeistere ich mich für Musikproduktion und
+            Kryptowährungen. Diese Vielfalt an Interessen hilft mir, kreative
+            Lösungen für technische Herausforderungen zu finden.
+          </p>
+
+          <div class="skills">
+            <span class="skill-tag">Vue.js</span>
+            <span class="skill-tag">Typescript</span>
+            <span class="skill-tag">HTML/CSS</span>
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">UX Design</span>
+          </div>
         </div>
-        <img src="img/IMG_3943.JPG" alt="me in a white room" />
+        <img src="img/IMG_3943.JPG" alt="Leon Vornholt portrait" />
       </section>
 
       <section id="projects">
-        <h2>Projects</h2>
-        <p>Check out some of my latest work.</p>
+        <h2>Aktuelle Projekte</h2>
+        <p>
+          Hier findest du eine Auswahl meiner neuesten Arbeiten und Projekte.
+        </p>
+
         <div class="projects-grid">
           <article class="project">
-            <h3>feedbacksystem</h3>
-            <p>
-              As part of my student work at the Technical University of
-              Mittelhessen, I am responsible for the frontend development of a
-              new feature of the feedback system; an application to
-              automatically check your submissions and give an immediate result.
-            </p>
-            <a href="https://github.com/thm-mni-ii/feedbacksystem"
-              >Link to Project</a
-            >
+            <div class="project-content">
+              <h3>Feedbacksystem</h3>
+              <p>
+                Als Teil meiner studentischen Tätigkeit an der Technischen
+                Hochschule Mittelhessen entwickle ich das Frontend für ein
+                innovatives Feedbacksystem. Die Anwendung ermöglicht es
+                Studenten, ihre Programmieraufgaben automatisch zu testen und
+                sofortiges Feedback zu erhalten. Das System unterstützt
+                verschiedene Programmiersprachen und bietet detaillierte
+                Bewertungen.
+              </p>
+
+              <div class="tech-stack">
+                <span class="tech-tag">Vue.js 3</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Vite</span>
+                <span class="tech-tag">REST API</span>
+                <span class="tech-tag">Docker</span>
+              </div>
+
+              <div class="project-links">
+                <a
+                  href="https://github.com/thm-mni-ii/feedbacksystem"
+                  target="_blank"
+                  rel="noopener"
+                  class="project-link">
+                  <span class="project-link-icon">📂</span>
+                  GitHub Repository
+                </a>
+                <a
+                  href="https://frits.mni.thm.de/"
+                  target="_blank"
+                  rel="noopener"
+                  class="project-link">
+                  <span class="project-link-icon">📋</span>
+                  Projekt Info
+                </a>
+              </div>
+            </div>
+
+            <div class="project-screenshot">
+              <div class="screenshot-container">
+                <div class="browser-mockup">
+                  <div class="browser-dots">
+                    <div class="browser-dot red"></div>
+                    <div class="browser-dot yellow"></div>
+                    <div class="browser-dot green"></div>
+                  </div>
+                  <div class="browser-url">https://feedback.thm.de</div>
+                </div>
+                <img
+                  src="img/Screenshot_feedbacksystem.png"
+                  alt="Feedbacksystem Interface Screenshot" />
+                <div class="screenshot-overlay">
+                  <h4>Automatische Code-Bewertung</h4>
+                  <p>
+                    Sofortiges Feedback für studentische Abgaben mit
+                    detaillierter Analyse
+                  </p>
+                </div>
+              </div>
+            </div>
           </article>
           <article class="project">
-            <h3>KEN</h3>
-            <p>
-              'Kraft der Eigenen Emotionen Nutzen' is a Project from Unimedizin
-              Gießen, offering patients a platform to learn about different
-              aspects of mental health. It's written mostly in PHP and JS. I
-              work mainly on the Frontend of the Project with Vue.js.
-            </p>
-            <a href="https://github.com/vdiel89/ken">Link to Project</a>
+            <div class="project-content">
+              <h3>KEN - Mental Health App</h3>
+              <p>
+                Kollaborationsprojekt mit der Universitätsmedizin Mainz zur
+                digitalen Unterstützung von Patienten mit psychischen
+                Erkrankungen. Die Progressive Web App hilft Nutzern beim
+                Tracking ihrer Stimmungen, Gedanken und Verhaltensweisen.
+                Zusätzlich erleichtert sie die Kommunikation zwischen Patienten
+                und Therapeuten durch strukturierte Datenerfassung.
+              </p>
+
+              <div class="tech-stack">
+                <span class="tech-tag">Vue.js 2</span>
+                <span class="tech-tag">PWA</span>
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Chart.js</span>
+                <span class="tech-tag">Service Worker</span>
+              </div>
+
+              <div class="project-links">
+                <a
+                  href="https://github.com/thm-mni-ii/feedbacksystem"
+                  target="_blank"
+                  rel="noopener"
+                  class="project-link">
+                  <span class="project-link-icon">📂</span>
+                  GitHub Repository
+                </a>
+                <a
+                  href="https://www.unimedizin-mainz.de/psychosomatik/patienten/digitale-behandlungsangebote/kraft-der-eigenen-emotionen-nutzen-ken.html"
+                  target="_blank"
+                  rel="noopener"
+                  class="project-link">
+                  <span class="project-link-icon">📋</span>
+                  Projekt Info
+                </a>
+              </div>
+            </div>
+
+            <div class="project-screenshot">
+              <div class="screenshot-container">
+                <div class="browser-mockup">
+                  <div class="browser-dots">
+                    <div class="browser-dot red"></div>
+                    <div class="browser-dot yellow"></div>
+                    <div class="browser-dot green"></div>
+                  </div>
+                  <div class="browser-url">https://feedback.thm.de</div>
+                </div>
+                <img
+                  src="img/Screenshot_feedbacksystem.png"
+                  alt="Feedbacksystem Interface Screenshot" />
+                <div class="screenshot-overlay">
+                  <h4>Automatische Code-Bewertung</h4>
+                  <p>
+                    Sofortiges Feedback für studentische Abgaben mit
+                    detaillierter Analyse
+                  </p>
+                </div>
+              </div>
+            </div>
           </article>
         </div>
-        <a href="projects.html" class="button">View All Projects</a>
+      </section>
+
+      <section id="contact">
+        <h2>Kontakt</h2>
+        <p>Interesse an einer Zusammenarbeit? Lass uns sprechen!</p>
+
+        <div class="contact-info">
+          <div class="contact-item">
+            <span>📧</span>
+            <a href="mailto:vornholt.leon@gmail.com">vornholt.leon@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <span>🎓</span>
+            <span>6. Semester Medieninformatik</span>
+          </div>
+          <div class="contact-item">
+            <span>🏢</span>
+            <span>TH Mittelhessen</span>
+          </div>
+        </div>
       </section>
     </main>
 
@@ -72,13 +216,6 @@
       <p>&copy; 2025 Leon Vornholt</p>
     </footer>
 
-    <script>
-      const hamburger = document.querySelector(".hamburger");
-      const navLinks = document.querySelector(".nav-links");
-
-      hamburger.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
-      });
-    </script>
+    <script src="portfolio.js"></script>
   </body>
 </html>
