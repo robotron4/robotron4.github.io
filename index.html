@@ -6,216 +6,209 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Leon Vornholt - Media Computer Science Student & Web Developer. Spezialisiert auf Vue.js, Frontend-Entwicklung und moderne Webtechnologien." />
+      content="Leon Vornholt - Medieninformatik Student & Web Developer. Spezialisiert auf Vue.js, Frontend-Entwicklung und moderne Webtechnologien." />
     <meta
       name="keywords"
       content="Web Developer, Vue.js, Frontend, Media Computer Science, Portfolio, Leon Vornholt" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+      rel="stylesheet" />
     <link rel="stylesheet" href="app.css" />
-    <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
-    <title>Leon Vornholt | Web Developer Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="img/lv.png" />
+    <title>Leon Vornholt | Web Developer</title>
   </head>
   <body>
-    <nav>
+
+    <nav id="nav">
+      <a href="#home" class="nav-logo">lv<span class="cursor-blink">_</span></a>
       <div class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#projects">Projekte</a>
-        <a href="#contact">Kontakt</a>
+        <a href="#about"><span class="prompt">~</span> über mich</a>
+        <a href="#projects"><span class="prompt">~</span> projekte</a>
+        <a href="#contact"><span class="prompt">~</span> kontakt</a>
       </div>
     </nav>
 
-    <main id="home">
-      <h1>Willkommen</h1>
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-inner">
+          <h1 class="hero-name">Leon Vornholt</h1>
+          <p class="hero-sub">Frontend Developer &amp; Medieninformatik Student</p>
+          <p class="hero-desc">
+            Ich baue intuitive Web-Applikationen — hauptsächlich mit
+            <strong>Vue.js</strong>. Studiere im 6. Semester an der
+            <strong>TH Mittelhessen</strong>.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn">Projekte ansehen</a>
+            <a href="#contact" class="btn btn-ghost">Kontakt aufnehmen</a>
+          </div>
+        </div>
+        <div class="hero-ascii" aria-hidden="true">
+          <div class="about-photo-wrap">
+            <img src="img/IMG_3943.JPG" alt="Leon Vornholt portrait" class="about-photo" />
+          </div>
+          <img src="/img/og-image.png" class="about-photo-wrap blue-stuff" alt="">
+
+        </div>
+      </section>
+
+      <div class="divider"></div>
 
       <section id="about">
-        <div>
-          <h3>Über mich</h3>
-          <p>
-            Ich bin Leon, Medieninformatik Student im 6. Semester an der
-            Technischen Hochschule Mittelhessen mit einer Leidenschaft für
-            Webentwicklung, insbesondere für die Arbeit mit
-            <span class="vue">Vue.js</span>. Ich entwickle gerne intuitive und
-            effiziente Anwendungen, die echten Mehrwert schaffen.
-          </p>
-          <p>
-            Neben dem Programmieren begeistere ich mich für Musikproduktion und
-            Kryptowährungen. Diese Vielfalt an Interessen hilft mir, kreative
-            Lösungen für technische Herausforderungen zu finden.
-          </p>
-
-          <div class="skills">
-            <span class="skill-tag">Vue.js</span>
-            <span class="skill-tag">Typescript</span>
-            <span class="skill-tag">HTML/CSS</span>
-            <span class="skill-tag">PHP</span>
-            <span class="skill-tag">Git</span>
-            <span class="skill-tag">UX Design</span>
+          <h2 class="section-heading"><a class="prompt" href="#about">#</a>about</h2>
+          
+          <div class="about-grid">
+          <div class="about-photo-wrap">
+            <img src="img/lv2.JPG" alt="Leon Vornholt portrait" class="photo" />
           </div>
+          <div class="about-text">
+            <p>
+              Ich bin Leon, Medieninformatik-Student an der
+              Technischen Hochschule Mittelhessen. Meine Leidenschaft gilt
+              der Webentwicklung — insbesondere der Arbeit mit
+              <strong>Vue.js</strong>. Ich entwickle gerne intuitive und
+              effiziente Anwendungen, die echten Mehrwert schaffen.
+            </p>
+            <p>
+              Neben dem Programmieren begeistere ich mich für
+              Musikproduktion für Gitarre spielen. 
+            </p>
+
+            <div class="skills-block">
+              <p class="skills-label">// skills</p>
+              <div class="skills">
+                <span class="skill-tag">Vue.js</span>
+                <span class="skill-tag">TypeScript</span>
+                <span class="skill-tag">HTML / CSS</span>
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">UX Design</span>
+              </div>
+            </div>
+          </div>
+
         </div>
-        <img src="img/IMG_3943.JPG" alt="Leon Vornholt portrait" />
       </section>
+
+      <div class="divider"></div>
 
       <section id="projects">
-        <h2>Aktuelle Projekte</h2>
-        <p>
-          Hier findest du eine Auswahl meiner neuesten Arbeiten und Projekte.
-        </p>
+        <h2 class="section-heading"><a class="prompt" href="#projects">#</a>projects</h2>
+        <p class="section-sub">Auswahl meiner neuesten Arbeiten.</p>
 
-        <div class="projects-grid">
-          <article class="project">
-            <div class="project-content">
-              <h3>Feedbacksystem</h3>
-              <p>
-                Als Teil meiner studentischen Tätigkeit an der Technischen
-                Hochschule Mittelhessen entwickle ich das Frontend für ein
-                innovatives Feedbacksystem. Die Anwendung ermöglicht es
-                Studenten, ihre Programmieraufgaben automatisch zu testen und
-                sofortiges Feedback zu erhalten. Das System unterstützt
-                verschiedene Programmiersprachen und bietet detaillierte
-                Bewertungen.
+        <div class="projects-list">
+
+          <article class="project-card">
+            <div class="project-meta">
+              <span class="project-num">01</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Feedbacksystem</h3>
+              <p class="project-desc">
+                Als Teil meiner studentischen Tätigkeit an der TH Mittelhessen
+                entwickle ich das Frontend für ein innovatives Feedbacksystem.
+                Die Anwendung ermöglicht es Studenten, ihre Programmieraufgaben
+                automatisch zu testen und sofortiges Feedback zu erhalten. Das
+                System unterstützt verschiedene Programmiersprachen und bietet
+                detaillierte Bewertungen.
               </p>
-
-              <div class="tech-stack">
-                <span class="tech-tag">Vue.js 3</span>
-                <span class="tech-tag">TypeScript</span>
-                <span class="tech-tag">Vite</span>
-                <span class="tech-tag">REST API</span>
-                <span class="tech-tag">Docker</span>
-              </div>
-
               <div class="project-links">
-                <a
-                  href="https://github.com/thm-mni-ii/feedbacksystem"
-                  target="_blank"
-                  rel="noopener"
-                  class="project-link">
-                  <span class="project-link-icon">📂</span>
-                  GitHub Repository
+                <a href="https://github.com/thm-mni-ii/feedbacksystem" target="_blank" rel="noopener" class="project-link">
+                  <span class="prompt">→</span> GitHub
                 </a>
-                <a
-                  href="https://frits.mni.thm.de/"
-                  target="_blank"
-                  rel="noopener"
-                  class="project-link">
-                  <span class="project-link-icon">📋</span>
-                  Projekt Info
+                <a href="https://frits.mni.thm.de/" target="_blank" rel="noopener" class="project-link">
+                  <span class="prompt">→</span> Projekt Info
                 </a>
               </div>
             </div>
-
-            <div class="project-screenshot">
-              <div class="screenshot-container">
-                <div class="browser-mockup">
-                  <div class="browser-dots">
-                    <div class="browser-dot red"></div>
-                    <div class="browser-dot yellow"></div>
-                    <div class="browser-dot green"></div>
-                  </div>
-                  <div class="browser-url">https://feedback.thm.de</div>
+            <div>
+              <div class="project-screenshot">
+                <div class="browser-bar">
+                  <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                  <span class="browser-url">feedback.thm.de</span>
                 </div>
-                <img
-                  src="img/Screenshot_feedbacksystem.png"
-                  alt="Feedbacksystem Interface Screenshot" />
-                <div class="screenshot-overlay">
-                  <h4>Automatische Code-Bewertung</h4>
-                  <p>
-                    Sofortiges Feedback für studentische Abgaben mit
-                    detaillierter Analyse
-                  </p>
-                </div>
+                <img src="img/Screenshot_feedbacksystem.png" alt="Feedbacksystem Screenshot" />
               </div>
+                <div class="tech-stack">
+                  <code>Vue.js</code><code>TypeScript</code><code>Vite</code><code>MongoDB</code><code>Docker</code>
+                </div>
             </div>
           </article>
-          <article class="project">
-            <div class="project-content">
-              <h3>KEN - Mental Health App</h3>
-              <p>
-                Kollaborationsprojekt mit der Universitätsmedizin Mainz zur
-                digitalen Unterstützung von Patienten mit psychischen
-                Erkrankungen. Die Progressive Web App hilft Nutzern beim
+
+          <article class="project-card">
+            <div class="project-meta">
+              <span class="project-num">02</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">KEN — Mental Health App</h3>
+              <p class="project-desc">
+                Projekt der Universitätsmedizin Mainz zur
+                digitalen Unterstützung von Patienten. Die Progressive Web App hilft Nutzern beim
                 Tracking ihrer Stimmungen, Gedanken und Verhaltensweisen.
-                Zusätzlich erleichtert sie die Kommunikation zwischen Patienten
-                und Therapeuten durch strukturierte Datenerfassung.
+                Zusätzlich erleichtert sie die Kommunikation zwischen
+                Patienten und Therapeuten.
               </p>
-
-              <div class="tech-stack">
-                <span class="tech-tag">Vue.js 2</span>
-                <span class="tech-tag">PWA</span>
-                <span class="tech-tag">PHP</span>
-                <span class="tech-tag">MySQL</span>
-                <span class="tech-tag">Service Worker</span>
-              </div>
-
               <div class="project-links">
-                <a
-                  href="https://github.com/thm-mni-ii/feedbacksystem"
-                  target="_blank"
-                  rel="noopener"
-                  class="project-link">
-                  <span class="project-link-icon">📂</span>
-                  GitHub Repository
+                <a href="https://github.com/thm-mni-ii/feedbacksystem" target="_blank" rel="noopener" class="project-link">
+                  <span class="prompt">→</span> GitHub
                 </a>
-                <a
-                  href="https://www.unimedizin-mainz.de/psychosomatik/patienten/digitale-behandlungsangebote/kraft-der-eigenen-emotionen-nutzen-ken.html"
-                  target="_blank"
-                  rel="noopener"
-                  class="project-link">
-                  <span class="project-link-icon">📋</span>
-                  Projekt Info
+                <a href="https://www.unimedizin-mainz.de/psychosomatik/patienten/digitale-behandlungsangebote/kraft-der-eigenen-emotionen-nutzen-ken.html" target="_blank" rel="noopener" class="project-link">
+                  <span class="prompt">→</span> Projekt Info
                 </a>
               </div>
             </div>
-
-            <div class="project-screenshot">
-              <div class="screenshot-container">
-                <div class="browser-mockup">
-                  <div class="browser-dots">
-                    <div class="browser-dot red"></div>
-                    <div class="browser-dot yellow"></div>
-                    <div class="browser-dot green"></div>
-                  </div>
-                  <div class="browser-url">https://unimedizin-mainz.de</div>
+            <div>
+              <div class="project-screenshot">
+                <div class="browser-bar">
+                  <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                  <span class="browser-url">unimedizin-mainz.de</span>
                 </div>
-                <img
-                  src="img/Screenshot_ken.png"
-                  alt="Feedbacksystem Interface Screenshot" />
-                <div class="screenshot-overlay">
-                  <h4>Automatische Code-Bewertung</h4>
-                  <p>
-                    Sofortiges Feedback für studentische Abgaben mit
-                    detaillierter Analyse
-                  </p>
-                </div>
+                <img src="img/Screenshot_ken.png" alt="KEN App Screenshot" />
+              </div>
+              <div class="tech-stack">
+                <code>Vue.js</code><code>PWA</code><code>PHP</code><code>MySQL</code><code>Docker</code>
               </div>
             </div>
           </article>
+
         </div>
       </section>
+
+      <div class="divider "></div>
 
       <section id="contact">
-        <h2>Kontakt</h2>
-        <p>Interesse an einer Zusammenarbeit? Lass uns sprechen!</p>
+        <h2 class="section-heading"><a class="prompt" href="#contact">#</a> contact</h2>
+        <p class="section-sub">
+          Interesse an einer Zusammenarbeit? Lass uns sprechen! :-)
+        </p>
 
-        <div class="contact-info">
+        <div class="contact-block">
           <div class="contact-item">
-            <span>📧</span>
-            <a href="mailto:vornholt.leon@gmail.com">vornholt.leon@gmail.com</a>
+            <span class="contact-key">email</span>
+            <a href="mailto:vornholt.leon@gmail.com" class="contact-val">vornholt.leon@gmail.com</a>
           </div>
           <div class="contact-item">
-            <span>🎓</span>
-            <span>6. Semester Medieninformatik</span>
+            <span class="contact-key">Studium</span>
+            <span class="contact-val">Medieninformatik B. Sc.</span>
           </div>
           <div class="contact-item">
-            <span>🏢</span>
-            <span>TH Mittelhessen</span>
+            <span class="contact-key">Hochschule</span>
+            <span class="contact-val">TH Mittelhessen</span>
           </div>
         </div>
       </section>
+
     </main>
 
     <footer>
-      <p>&copy; 2025 Leon Vornholt</p>
+      <span class="prompt">~</span>
+      <span>&copy; 2025 Leon Vornholt</span>
     </footer>
 
-    <script src="portfolio.js"></script>
+    <button class="scroll-top" id="scrollTop" aria-label="Nach oben scrollen">↑</button>
+
+    <script src="app.js"></script>
   </body>
 </html>
