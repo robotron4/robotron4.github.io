@@ -11,7 +11,7 @@
   --muted: rgba(18, 13, 13, 0.5);
   --accent-dim: rgba(26, 123, 249, 0.12);
 
-  --font-mono: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
+  --font-mono: "JetBrains Mono", "Fira Code", "Cascadia Code", monospace;
   --radius: 4px;
   --max-w: 900px;
   --nav-h: 58px;
@@ -22,7 +22,9 @@
   --t-slow: 0.3s;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -46,7 +48,8 @@ section[id] {
 }
 
 /* ─── Typography ─── */
-h1, h3 {
+h1,
+h3 {
   font-family: var(--font-mono);
   font-weight: 700;
   line-height: 1.2;
@@ -103,8 +106,13 @@ strong {
 }
 
 @keyframes blink {
-  0%, 100% { opacity: 1; }
-  50%       { opacity: 0; }
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
 .nav-links {
@@ -118,7 +126,9 @@ strong {
   font-size: 0.85rem;
   padding: 0.35em 0.75em;
   border-radius: var(--radius);
-  transition: color var(--t-fast), background var(--t-fast);
+  transition:
+    color var(--t-fast),
+    background var(--t-fast);
 }
 
 .nav-links a .prompt {
@@ -248,7 +258,11 @@ main {
   color: var(--background);
   text-decoration: none;
   border: 1px solid var(--foreground);
-  transition: background var(--t-fast), border-color var(--t-fast), color var(--t-fast), transform 0.15s;
+  transition:
+    background var(--t-fast),
+    border-color var(--t-fast),
+    color var(--t-fast),
+    transform 0.15s;
   cursor: pointer;
 }
 
@@ -280,7 +294,10 @@ main {
 }
 
 @keyframes fadeUp {
-  to { opacity: 1; transform: translateY(0); }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* ─── About ─── */
@@ -325,7 +342,10 @@ main {
   font-size: 0.8rem;
   border-radius: var(--radius);
   color: var(--foreground);
-  transition: border-color var(--t-fast), color var(--t-fast), background var(--t-fast);
+  transition:
+    border-color var(--t-fast),
+    color var(--t-fast),
+    background var(--t-fast);
 }
 
 .skill-tag {
@@ -351,13 +371,19 @@ main {
   width: 180px;
   flex-shrink: 0;
 }
+.about-photo-wrap2 {
+  width: 210px;
+  flex-shrink: 0;
+}
 
 .about-photo,
 .photo {
   width: 100%;
   border: 1px solid var(--border);
   display: block;
-  transition: filter var(--t-slow), transform var(--t-slow);
+  transition:
+    filter var(--t-slow),
+    transform var(--t-slow);
 }
 
 .about-photo {
@@ -394,7 +420,9 @@ main {
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  transition: border-color var(--t-medium), box-shadow var(--t-medium);
+  transition:
+    border-color var(--t-medium),
+    box-shadow var(--t-medium);
 }
 
 .project-card:hover {
@@ -440,7 +468,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem;
-  margin-top: 0.7rem;
+  margin-top: 1.3rem;
 }
 
 .project-links {
@@ -458,7 +486,9 @@ main {
   gap: 0.3em;
   border-bottom: 1px solid var(--border-strong);
   padding-bottom: 1px;
-  transition: color var(--t-fast), border-color var(--t-fast);
+  transition:
+    color var(--t-fast),
+    border-color var(--t-fast);
 }
 
 .project-link .prompt {
@@ -496,9 +526,15 @@ main {
   display: inline-block;
 }
 
-.dot:nth-child(1) { background: #ff5f57; }
-.dot:nth-child(2) { background: #febc2e; }
-.dot:nth-child(3) { background: #28c840; }
+.dot:nth-child(1) {
+  background: #ff5f57;
+}
+.dot:nth-child(2) {
+  background: #febc2e;
+}
+.dot:nth-child(3) {
+  background: #28c840;
+}
 
 .browser-url {
   font-size: 0.72rem;
@@ -573,7 +609,6 @@ footer {
   color: var(--muted);
 }
 
-
 /* ─── Scroll-to-top ─── */
 .scroll-top {
   position: fixed;
@@ -590,7 +625,10 @@ footer {
   cursor: pointer;
   opacity: 0;
   visibility: hidden;
-  transition: opacity var(--t-medium), visibility var(--t-medium), transform var(--t-fast);
+  transition:
+    opacity var(--t-medium),
+    visibility var(--t-medium),
+    transform var(--t-fast);
 }
 
 .scroll-top.visible {
