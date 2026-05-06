@@ -654,7 +654,8 @@ footer {
     gap: 2rem;
   }
 
-  .about-grid .about-photo-wrap {
+  .about-grid .about-photo-wrap,
+  .about-grid .about-photo-wrap2 {
     display: none;
   }
 
